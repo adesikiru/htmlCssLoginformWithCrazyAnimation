@@ -98,6 +98,31 @@ html {
                             0 0 50px #03e9f4,
                             0 0 100px #03e9f4, ;
                     }
+
+                    i {
+                        position: absolute;
+                        display: block;
+
+                        &:nth-child(1) {
+                            top: 0;
+                            left: -100%;
+                            width: 100%;
+                            height: 2px;
+                            background: linear-gradient(90deg, transparent, #03e9f4);
+                            text-decoration: none;
+                            font-style: none;
+                            animation: iAnime1 1s linear infinite;
+                        }
+
+                        @keyframes iAnime1 {
+                            0% {
+                                left: -100%;
+                            }
+                            100% {
+                                left: 100%;
+                            }
+                        }
+                    }
                 }
             }
         }
