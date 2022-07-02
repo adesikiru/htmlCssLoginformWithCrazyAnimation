@@ -52,6 +52,7 @@ html {
                         &:valid,
                         &:focus {
                             outline: none;
+                            background: inherit;
                         }
 
 

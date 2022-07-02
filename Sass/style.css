@@ -82,6 +82,7 @@ html body main form span input {
 
 html body main form span input:active, html body main form span input:valid, html body main form span input:focus {
   outline: none;
+  background: inherit;
 }
 
 html body main form span input:focus ~ label {
