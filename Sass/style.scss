@@ -32,16 +32,18 @@ html {
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                width: 100%;
 
                 span {
                     position: relative;
+                    width: 100%;
 
                     input {
                         outline: none;
                         width: 100%;
                         padding: 10px 0;
                         color: #fff;
-                        margin-bottom: 1em;
+                        margin-bottom: 2em;
                         border: none;
                         border-bottom: 1px solid #fff;
                         background: inherit;
@@ -49,6 +51,24 @@ html {
                         &:active {
                             outline: none;
                         }
+
+
+                    }
+
+                    input:focus~label {
+                        top: -20px;
+                        color: #03e9f4;
+                        font-size: 12px;
+                    }
+
+                    label {
+                        position: absolute;
+                        left: 0;
+                        padding-top: 0.5em;
+                        transition: .5s;
+                        /*pointer-events: none; */
+                        color: #fff;
+                        cursor: pointer;
                     }
                 }
             }

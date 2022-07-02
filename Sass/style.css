@@ -61,10 +61,12 @@ html body main form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 html body main form span {
   position: relative;
+  width: 100%;
 }
 
 html body main form span input {
@@ -72,7 +74,7 @@ html body main form span input {
   width: 100%;
   padding: 10px 0;
   color: #fff;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   border: none;
   border-bottom: 1px solid #fff;
   background: inherit;
@@ -80,5 +82,22 @@ html body main form span input {
 
 html body main form span input:active {
   outline: none;
+}
+
+html body main form span input:focus ~ label {
+  top: -20px;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+html body main form span label {
+  position: absolute;
+  left: 0;
+  padding-top: 0.5em;
+  -webkit-transition: .5s;
+  transition: .5s;
+  /*pointer-events: none; */
+  color: #fff;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
