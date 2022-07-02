@@ -1,2 +1,6 @@
-let inputs = document.querySelectorAll('input')
-in
+let inputs = document.querySelectorAll("input");
+inputs.forEach(function (input) {
+  if (input.value !=''){
+    
+  };
+});

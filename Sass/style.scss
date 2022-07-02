@@ -48,17 +48,21 @@ html {
                         border-bottom: 1px solid #fff;
                         background: inherit;
 
-                        &:active {
+                        &:active,
+                        :valid,
+                        :focus {
                             outline: none;
                         }
 
 
                     }
 
+
                     input:focus~label {
                         top: -20px;
                         color: #03e9f4;
                         font-size: 12px;
+                        outline: none;
                     }
 
                     label {

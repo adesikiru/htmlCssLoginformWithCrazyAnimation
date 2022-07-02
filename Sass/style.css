@@ -80,7 +80,9 @@ html body main form span input {
   background: inherit;
 }
 
-html body main form span input:active {
+html body main form span input:active,
+html body main form span input :valid,
+html body main form span input :focus {
   outline: none;
 }
 
@@ -88,6 +90,7 @@ html body main form span input:focus ~ label {
   top: -20px;
   color: #03e9f4;
   font-size: 12px;
+  outline: none;
 }
 
 html body main form span label {
