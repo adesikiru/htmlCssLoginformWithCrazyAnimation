@@ -100,4 +100,20 @@ html body main form span label {
   color: #fff;
   cursor: pointer;
 }
+
+html body main form button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: relative;
+  padding: 0.5em 1.5em;
+  color: #03e9f4;
+  font-size: 16px;
+  overflow: hidden;
+  background: inherit;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
