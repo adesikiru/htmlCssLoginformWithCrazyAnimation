@@ -80,9 +80,7 @@ html body main form span input {
   background: inherit;
 }
 
-html body main form span input:active,
-html body main form span input :valid,
-html body main form span input :focus {
+html body main form span input:active, html body main form span input:valid, html body main form span input:focus {
   outline: none;
 }
 
@@ -118,5 +116,13 @@ html body main form button {
   transition: .5s;
   letter-spacing: 4px;
   cursor: pointer;
+}
+
+html body main form button:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+          box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
 }
 /*# sourceMappingURL=style.css.map */
