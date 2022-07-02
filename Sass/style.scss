@@ -18,6 +18,40 @@ html {
             box-sizing: border-box;
             box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
             border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                color: #fff;
+            }
+
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                span {
+                    position: relative;
+
+                    input {
+                        outline: none;
+                        width: 100%;
+                        padding: 10px 0;
+                        color: #fff;
+                        margin-bottom: 1em;
+                        border: none;
+                        border-bottom: 1px solid #fff;
+                        background: inherit;
+
+                        &:active {
+                            outline: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }
