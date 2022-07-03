@@ -9,6 +9,7 @@ inputs.forEach((input) =>
       console.log(input.value);
     }else{
         label.style.top = "0px";
+        label.style.fontSize= "18px";
     }
   }),
 );
