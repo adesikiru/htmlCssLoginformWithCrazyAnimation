@@ -10,6 +10,7 @@ inputs.forEach((input) =>
     }else{
         label.style.top = "0px";
         label.style.fontSize= "18px";
+        label.style.color = "white";
     }
   }),
 );
