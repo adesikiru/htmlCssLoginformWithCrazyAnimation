@@ -1,0 +1,258 @@
+html {
+  height: 100%;
+}
+
+html body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background: #f2eee3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main {
+  width: 400px;
+  padding: 2em;
+  background: rgba(38, 37, 37, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body main h2 {
+  color: #fff;
+}
+
+html body main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+html body main form span {
+  position: relative;
+  width: 100%;
+}
+
+html body main form span input {
+  outline: none;
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  margin-bottom: 2em;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: inherit;
+}
+
+html body main form span input:active, html body main form span input:valid, html body main form span input:focus {
+  outline: none;
+  background: inherit;
+}
+
+html body main form span input:focus ~ label {
+  top: -20px;
+  color: #03e9f4;
+  font-size: 12px;
+  outline: none;
+}
+
+html body main form span label {
+  position: absolute;
+  left: 0;
+  padding-top: 0.5em;
+  -webkit-transition: .5s;
+  transition: .5s;
+  /*pointer-events: none; */
+  color: #fff;
+  cursor: pointer;
+}
+
+html body main form button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: relative;
+  padding: 0.5em 1.5em;
+  color: #03e9f4;
+  font-size: 16px;
+  overflow: hidden;
+  background: inherit;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+html body main form button:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+          box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+html body main form button i {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  font-style: none;
+}
+
+html body main form button i:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  -webkit-animation: iAnimeTop 1s linear infinite;
+          animation: iAnimeTop 1s linear infinite;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#03e9f4));
+  background: linear-gradient(90deg, transparent, #03e9f4);
+}
+
+@-webkit-keyframes iAnimeTop {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes iAnimeTop {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+html body main form button i:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  -webkit-animation: iAnimeRight 1s linear infinite;
+          animation: iAnimeRight 1s linear infinite;
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#03e9f4));
+  background: linear-gradient(180deg, transparent, #03e9f4);
+}
+
+@-webkit-keyframes iAnimeRight {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes iAnimeRight {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+html body main form button i:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#03e9f4));
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  -webkit-animation: iAnimeBotom 1s linear infinite;
+          animation: iAnimeBotom 1s linear infinite;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+@-webkit-keyframes iAnimeBotom {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes iAnimeBotom {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+html body main form button i:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  -webkit-animation: iAnimeLeft 1s linear infinite;
+          animation: iAnimeLeft 1s linear infinite;
+  -webkit-animation-delay: .75s;
+          animation-delay: .75s;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#03e9f4));
+  background: linear-gradient(360deg, transparent, #03e9f4);
+}
+
+@-webkit-keyframes iAnimeLeft {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+
+@keyframes iAnimeLeft {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
